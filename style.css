@@ -12,6 +12,18 @@
     color: #f6ede9;
 }
 
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+
 .form p {
     opacity: 60%;
 }
@@ -46,11 +58,6 @@
     text-transform: uppercase;
 }
 
-.word-description h4 {
-    font-weight: 500;
-    font-size: 30px;
-    line-height: 36px;
-}
 
 .about-number, .about-text, .works-description, .step, .form p, .form h2 {
     color: #fff;
@@ -78,6 +85,8 @@ html {
 h2 {
     font-size: 40px;
     line-height: 50px;
+    font-weight: 400;
+    text-transform: uppercase;
 }
  
 .menu__link {
@@ -91,17 +100,18 @@ h2 {
 
 }
 
-.menu__item {
-    margin-right: 40px;
-}
-
-.menu__item:last-child {
-    margin-right: 0;
-}
-
 .menu {
     display: flex;
-    
+    justify-content: space-between;
+    margin: 0 82px 0 41px;
+}
+
+.nav {
+    flex-grow: 1;
+}
+
+.contacts {
+    justify-self: flex-end;
 }
 
 p {
@@ -112,8 +122,14 @@ p {
     font-weight: 500;
     background-color: var(--lightbrown);
     padding: 25px 65px;
+    border: none;
+    cursor: pointer;
     font-size: 20px;
     color: var(--mainColor);
+}
+
+.button:focus {
+    outline: none;
 }
 
 h1 {
@@ -128,7 +144,149 @@ img {
 }
 
 .header {
-    background: url('img/header_bg.jpg') no-repeat;
+    background: url('img/header_bg.jpg') no-repeat center;
     background-size: cover;
+    padding-top: 36px;
+    height: 100vh;
+}
 
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+
+.logo__text {
+    font-size: 16px;
+}
+
+.logo__img {
+    width: 25px;
+    height: 25px;
+}
+
+.topbar {
+    display: flex;
+    align-items: center;
+    grid-column: 1/-1;
+    justify-content: space-between;
+}
+
+.offer {
+    grid-column: 2/7;
+    margin: 140px 0 170px;
+}
+
+.offer__heading {
+    margin-bottom: 1.33rem;
+    font-weight: 400;
+}
+
+.offer__text {
+    margin-bottom: 1rem;
+}
+
+.about-us h2 {
+    text-align: center;
+}
+
+.about-us__photo {
+    grid-column: 2/7;
+}
+
+.about-us__content {
+    grid-column: 7/-2;
+}
+
+.about-us__text {
+    margin-bottom: 40px;
+}
+
+.about-us__text:last-child {
+    margin-bottom: 0;
+}
+
+.about-us__inner {
+    column-gap: 60px;
+    margin-top: 40px;
+}
+
+.experience {
+    background-color: var(--brown);
+    padding: 85px 0;
+    margin-top: 15px;
+}
+
+.experience__inner {
+    grid-column: 2/-2;
+    display: flex;
+    justify-content: space-between;
+}
+
+.experience__number {
+    font-size: 50px;
+    text-align: center;
+}
+
+.experience__item {
+    color: #fff;
+}
+
+.experience__text {
+    font-weight: 500;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.our-works__heading {
+    grid-column: 1/-1;
+    margin-bottom: 40px;
+}
+
+.works-gallery__item:nth-child(1), .works-gallery__item:nth-child(4) {
+    grid-column: auto / span 5;
+}
+.works-gallery__item:nth-child(2), .works-gallery__item:nth-child(3) {
+    grid-column: auto / span 7;
+}
+
+.works-gallery {
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+}
+
+.works-gallery__item {
+    position: relative;
+
+}
+
+.works-gallery__item:hover .works-gallery__text {
+    background: rgba(100, 72, 69, 0.8);
+}
+
+.works-gallery__content {
+    position: relative;
+    top: 0;
+    bottom: 0;
+}
+
+.works-gallery__text {
+    color: #fff;
+    text-align: center;
+    transition: 0.4s ease all;
+    padding: 0 35px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.works-gallery__text p {
+    text-align: left;
+}
+
+.works-gallery__text h4 {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
 }
