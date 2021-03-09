@@ -1,0 +1,134 @@
+:root {
+    --lightbrown: #cc8b86;
+    --mainColor: #533738;
+    --beige: #f5f2ed;
+    --hoverEffect: rgba(100, 72, 69, 0.8);
+    --brown: #8d7370;
+    --paddingTop: 65px;
+    --lightpink: #e2c4ba;
+}
+
+.form {
+    color: #f6ede9;
+}
+
+.form p {
+    opacity: 60%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.arrow, .step {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.step {
+    font-weight: 500;
+    font-size: 30px;
+    width: 70px;
+    height: 70px;
+    background-color: var(--brown);    
+}
+
+.arrow {
+    background-color: var(--lightbrown);
+    width: 72px;
+    height: 72px;
+}
+
+.client-name {
+    text-transform: uppercase;
+}
+
+.word-description h4 {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.about-number, .about-text, .works-description, .step, .form p, .form h2 {
+    color: #fff;
+}
+
+.about-number {
+    font-size: 50px;
+}
+
+.about-text {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.section {
+    padding-top: var(--paddingTop);
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: var(--mainColor);
+}
+
+h2 {
+    font-size: 40px;
+    line-height: 50px;
+}
+ 
+.menu__link {
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
+    color: var(--mainColor);
+}
+
+.menu__link:hover {
+
+}
+
+.menu__item {
+    margin-right: 40px;
+}
+
+.menu__item:last-child {
+    margin-right: 0;
+}
+
+.menu {
+    display: flex;
+    
+}
+
+p {
+    line-height: 30px;
+}
+
+.button {
+    font-weight: 500;
+    background-color: var(--lightbrown);
+    padding: 25px 65px;
+    font-size: 20px;
+    color: var(--mainColor);
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 62px;
+}
+
+img {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.header {
+    background: url('img/header_bg.jpg') no-repeat;
+    background-size: cover;
+
+}
